@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>CALCULATOR</h1></header>
+    <div class="links">
+        <h2><a href="#addition">ADDITION</a>&nbsp;&nbsp;&nbsp;
+        <a href="#subtraction">SUBTRACTION</a>&nbsp;&nbsp;&nbsp;
+        <a href="#multiplication">MULTIPLICATION</a>&nbsp;&nbsp;&nbsp;
+        <a href="#division">DIVISION</a></h2>
+    </div>
+
+    <div class="sum">
+        <h2 id="addition">ADDITION</h2>
+        <form name="formadd">
+        <h3>First digit</h3><input type="text" name="txtadd1"><br>
+        <h3>Second digit</h3><input type="text" name="txtadd2"><br>
+        <h3>Sum</h3><input type="text" name="txtsum" readonly><br>
+        <!-- <button onclick="add()">ADD</button> -->
+        <input class="button" type="button" value="ADD" onclick="add()">
+        <input class="button" type="button" value="CLEAR" onclick="clearadd()">
+        </form>
+    </div>
+
+    <div class="minus">
+        <h2 id="subtraction">SUBTRACTION</h2>
+        <form name="formsub">
+        <h3>First digit</h3><input type="text" name="txtsub1"><br>
+        <h3>Second digit</h3><input type="text" name="txtsub2"><br>
+        <h3>Difference</h3><input type="text" name="txtsub" readonly><br>
+        <input class="button" type="button" value="SUBTRACT" onclick="minus()">
+        <input class="button" type="button" value="CLEAR" onclick="clearminus()">
+        </form>
+    </div>
+
+    <div class="multiply">
+        <h2 id="multiplication">MULTIPLICATION</h2>
+        <form name="formmult">
+        <h3>First digit</h3><input type="text" name="txtmult1"><br>
+        <h3>Second digit</h3><input type="text" name="txtmult2"><br>
+        <h3>Product</h3><input type="text" name="txtmult" readonly><br>
+        <input class="button" type="button" value="MULTIPLY" onclick="multiply()">
+        <input class="button" type="button" value="CLEAR" onclick="clearmultiply()">
+        </form>
+    </div>
+
+    <div class="divide">
+        <h2 id="division">DIVISION</h2>
+        <form name="formdiv">
+        <h3>Numerator</h3><input type="text" name="txtdiv1"><br>
+        <h3>Denominator</h3><input type="text" name="txtdiv2"><br>
+        <h3>Quotient</h3><input type="text" name="txtdiv" readonly><br>
+        <input class="button" type="button" value="DIVIDE" onclick="divide()">
+        <input class="button" type="button" value="CLEAR" onclick="cleardivide()">
+        </form>
+    </div>
+
+    <footer><h3>Devoloped by <span>IJAS</span></h3></footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
