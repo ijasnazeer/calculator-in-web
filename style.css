@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+    background-color: black;
+    color: white;
+}
+header {
+    text-align: center;
+    font-family: orbitron;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    font-family: algerian;
+    color: blue;
+}
+.links h2 {
+    background-color:white;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.sum, .minus, .multiply, .divide {
+    margin: auto;
+    width: 90%;
+    height: 100vh;
+    padding-left: 40%;
+    /* padding-top: 3%; */
+    box-sizing: border-box;
+    background: url(back.jpg);
+}
+#addition #subtraction #multiplication #division{
+    font-family: algerian;
+}
+input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+.button {
+    width: 100px;
+    height: 40px;
+    padding: 1px;
+    border-radius: 20px;
+}
+footer {
+    text-align: center;
+    font-family: sans-serif;
+}
+footer span {
+    font-family: Ubuntu Mono;
+    color: lightgrey;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 10px;
+        top: 40px;
+    }
+}
